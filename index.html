@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QuickCart grocery delivery portal with fresh products delivered fast.">
+    <title>QuickCart - Grocery Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#top" aria-label="QuickCart home">QuickCart</a>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#top-selling">Offers</a></li>
+                <li><a href="#reviews">Contact</a></li>
+            </ul>
+        </nav>
+        <form class="search-wrap" role="search">
+            <label class="sr-only" for="product-search">Search products</label>
+            <input id="product-search" type="search" placeholder="Search products" aria-label="Search products">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Your everyday basket, simplified</p>
+                <h1 id="hero-title">Fresh Groceries Delivered</h1>
+                <p class="hero-copy">Handpicked essentials from local stores, brought to your door in minutes.</p>
+                <a class="hero-button" href="#products">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="delivery-banner" aria-label="Delivery benefits">
+            <div><span aria-hidden="true">🚚</span> Free Delivery Above ₹500</div>
+            <div><span aria-hidden="true">⏱️</span> 30 Min Delivery</div>
+            <div><span aria-hidden="true">💚</span> Fresh Guarantee</div>
+        </section>
+
+        <section class="categories" id="categories" aria-labelledby="categories-title">
+            <h2 id="categories-title">Categories</h2>
+            <a href="#products">Fruits</a>
+            <a href="#products">Vegetables</a>
+            <a href="#products">Dairy</a>
+            <a href="#products">Snacks</a>
+        </section>
+
+        <section class="top-selling" id="top-selling" aria-labelledby="top-selling-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Picked for your cart</p>
+                    <h2 id="top-selling-title">Top Selling Products</h2>
+                </div>
+                <span class="section-note">Loved by QuickCart shoppers</span>
+            </div>
+            <div class="top-selling-grid">
+                <article class="selling-card">
+                    <span class="trending-badge">🔥 Trending</span>
+                    <span class="selling-emoji" aria-hidden="true">🥛</span>
+                    <div><h3>Milk</h3><p>₹60 <span>★ 4.8</span></p></div>
+                </article>
+                <article class="selling-card">
+                    <span class="trending-badge">🔥 Trending</span>
+                    <span class="selling-emoji" aria-hidden="true">🍌</span>
+                    <div><h3>Banana</h3><p>₹50 <span>★ 4.9</span></p></div>
+                </article>
+                <article class="selling-card">
+                    <span class="trending-badge">🔥 Trending</span>
+                    <span class="selling-emoji" aria-hidden="true">🍟</span>
+                    <div><h3>Chips</h3><p>₹30 <span>★ 4.2</span></p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="products-section" id="products" aria-labelledby="products-title">
+            <div class="section-heading products-heading">
+                <div>
+                    <p class="eyebrow">Freshly stocked</p>
+                    <h2 id="products-title">Shop All Groceries</h2>
+                </div>
+                <span class="product-count" aria-live="polite">8 products</span>
+                <span class="search-status" aria-live="polite"></span>
+            </div>
+            <div class="products">
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Apple to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🍎</span><h3>Apple</h3>
+                    <span class="availability in-stock"><span aria-hidden="true">✓</span> In Stock</span>
+                    <p class="price">₹120</p><p class="rating" aria-label="Rated 4.5 out of 5, 245 reviews"><span>★</span> 4.5 <small>(245 reviews)</small></p>
+                    <button class="cart-button" type="button">Add To Cart</button>
+                </article>
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Milk to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🥛</span><h3>Milk</h3>
+                    <span class="availability in-stock"><span aria-hidden="true">✓</span> In Stock</span>
+                    <p class="price">₹60</p><p class="rating" aria-label="Rated 4.8 out of 5, 312 reviews"><span>★</span> 4.8 <small>(312 reviews)</small></p>
+                    <button class="cart-button" type="button">Add To Cart</button>
+                </article>
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Bread to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🍞</span><h3>Bread</h3>
+                    <span class="availability out-of-stock"><span aria-hidden="true">✗</span> Out of Stock</span>
+                    <p class="price">₹45</p><p class="rating" aria-label="Rated 3.9 out of 5, 156 reviews"><span>★</span> 3.9 <small>(156 reviews)</small></p>
+                    <button class="cart-button" type="button" disabled>Unavailable</button>
+                </article>
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Orange to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🍊</span><h3>Orange</h3>
+                    <span class="availability in-stock"><span aria-hidden="true">✓</span> In Stock</span>
+                    <p class="price">₹90</p><p class="rating" aria-label="Rated 4.6 out of 5, 298 reviews"><span>★</span> 4.6 <small>(298 reviews)</small></p>
+                    <button class="cart-button" type="button">Add To Cart</button>
+                </article>
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Cheese to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🧀</span><h3>Cheese</h3>
+                    <span class="availability limited-stock"><span aria-hidden="true">⚠</span> Limited Stock</span>
+                    <p class="price">₹180</p><p class="rating" aria-label="Rated 4.7 out of 5, 187 reviews"><span>★</span> 4.7 <small>(187 reviews)</small></p>
+                    <button class="cart-button" type="button">Add To Cart</button>
+                </article>
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Chips to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🍟</span><h3>Chips</h3>
+                    <span class="availability in-stock"><span aria-hidden="true">✓</span> In Stock</span>
+                    <p class="price">₹30</p><p class="rating" aria-label="Rated 4.2 out of 5, 423 reviews"><span>★</span> 4.2 <small>(423 reviews)</small></p>
+                    <button class="cart-button" type="button">Add To Cart</button>
+                </article>
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Banana to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🍌</span><h3>Banana</h3>
+                    <span class="availability in-stock"><span aria-hidden="true">✓</span> In Stock</span>
+                    <p class="price">₹50</p><p class="rating" aria-label="Rated 4.9 out of 5, 334 reviews"><span>★</span> 4.9 <small>(334 reviews)</small></p>
+                    <button class="cart-button" type="button">Add To Cart</button>
+                </article>
+                <article class="product-card">
+                    <button class="wishlist-button" type="button" aria-label="Add Butter to wishlist" aria-pressed="false">♡</button>
+                    <span class="product-emoji" aria-hidden="true">🧈</span><h3>Butter</h3>
+                    <span class="availability limited-stock"><span aria-hidden="true">⚠</span> Limited Stock</span>
+                    <p class="price">₹75</p><p class="rating" aria-label="Rated 4.4 out of 5, 201 reviews"><span>★</span> 4.4 <small>(201 reviews)</small></p>
+                    <button class="cart-button" type="button">Add To Cart</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+            <p class="eyebrow">Kind words</p><h2 id="reviews-title">Customer Reviews</h2><p>“Excellent service and the produce arrived beautifully fresh!”</p>
+        </section>
+    </main>
+
+    <footer><p>About Us <span aria-hidden="true">|</span> Contact Us <span aria-hidden="true">|</span> Social Links</p></footer>
+
+    <script>
+        document.querySelectorAll('.wishlist-button').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var isSaved = button.getAttribute('aria-pressed') === 'true';
+                button.setAttribute('aria-pressed', String(!isSaved));
+                var productName = button.getAttribute('aria-label').replace(/^(Add|Remove) /, '').replace(/ to wishlist$/, '');
+                button.setAttribute('aria-label', (isSaved ? 'Add ' : 'Remove ') + productName + ' to wishlist');
+                button.textContent = isSaved ? '♡' : '♥';
+            });
+        });
+
+        document.querySelectorAll('.cart-button:not(:disabled)').forEach(function (button) {
+            button.addEventListener('click', function () {
+                button.textContent = 'Added ✓';
+                button.classList.add('added');
+            });
+        });
+
+        var searchForm = document.querySelector('.search-wrap');
+        var searchInput = document.querySelector('#product-search');
+        var productCards = document.querySelectorAll('.product-card');
+        var productCount = document.querySelector('.product-count');
+
+        function filterProducts() {
+            var query = searchInput.value.trim().toLowerCase();
+            var visibleCount = 0;
+
+            productCards.forEach(function (card) {
+                var productName = card.querySelector('h3').textContent.toLowerCase();
+                var isMatch = !query || productName.indexOf(query) !== -1;
+                card.hidden = !isMatch;
+                if (isMatch) {
+                    visibleCount += 1;
+                }
+            });
+
+            productCount.textContent = visibleCount + (visibleCount === 1 ? ' product' : ' products');
+            document.querySelector('.search-status').textContent = query
+                ? (visibleCount ? 'Showing results for “' + searchInput.value.trim() + '”' : 'No products found for “' + searchInput.value.trim() + '”')
+                : '';
+            document.querySelector('#products').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        searchForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            filterProducts();
+        });
+
+        searchForm.querySelector('button').addEventListener('click', filterProducts);
+    </script>
+</body>
+</html>
